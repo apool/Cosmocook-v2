@@ -520,7 +520,7 @@ function Cart({ open, items, onClose, onQty, onRemove, onClearCart }) {
     payment: "Pix",
   });
   const subtotal = items.reduce((s, i) => s + i.cookie.price * i.qty, 0);
-  const delivery = mode === "retirada" ? 0 : subtotal > 0 ? subtotal > 80 ? 0 : 12 : 0;
+  const delivery = mode === "retirada" ? 0 : subtotal > 0 ? 8 : 0;
   const total = subtotal + delivery;
 
   // reset to cart step whenever drawer reopens
@@ -652,15 +652,9 @@ function Cart({ open, items, onClose, onQty, onRemove, onClearCart }) {
               <div className="cart-row">
                 <span>
                   {mode === "retirada" ? "Retirada no local" : "Entrega"}
-                  {mode === "entrega" && subtotal > 80 && <em style={{ color: "var(--gold-soft)", fontStyle: "normal" }}> · grátis</em>}
                 </span>
                 <span>{subtotal === 0 ? "—" : delivery === 0 ? "Grátis" : fmt(delivery)}</span>
               </div>
-              {mode === "entrega" && subtotal > 0 && subtotal < 80 &&
-              <div className="cart-row" style={{ fontSize: 11, color: "var(--gold-soft)" }}>
-                  <span>Faltam {fmt(80 - subtotal)} para frete grátis</span>
-                </div>
-              }
               <div className="cart-row total">
                 <span>Total</span>
                 <span className="val">{fmt(total)}</span>
