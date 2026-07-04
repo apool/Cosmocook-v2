@@ -84,10 +84,80 @@ const COOKIES = [
   price: 12.0,
   tag: { label: "Box", className: "veg" },
   img: "img/mini-cookies.jpg"
+},
+{
+  id: "CC-09",
+  name: "Cometa de Pistache",
+  italic: "Pistache",
+  category: "Recheados",
+  desc: "Massa tradicional com gotas de chocolate branco, recheado com pasta cremosa de pistache, finalizado com farofa de pistache.",
+  price: 19.5,
+  tag: { label: "Novo", className: "new" },
+  img: "img/pistache.jpeg"
+},
+{
+  id: "CC-10",
+  name: "Meteoro de KitKat",
+  italic: "KitKat",
+  category: "Recheados",
+  desc: "Massa tradicional, gotas de chocolate blend, pedaços de KitKat ao leite e Dark, recheado de pasta cremosa de KitKat.",
+  price: 17.0,
+  tag: { label: "Novo", className: "new" },
+  img: "img/kit-kat.jpeg"
+},
+{
+  id: "CC-11",
+  name: "Nebulosa de Ovomaltine",
+  italic: "Ovomaltine",
+  category: "Recheados",
+  desc: "Massa tradicional, gotas de chocolate blend, recheado de creme de ovomaltine, finalizado com rocks crocante.",
+  price: 16.5,
+  tag: { label: "Novo", className: "new" },
+  img: "img/nebulosa-ovomaltine.jpeg"
+},
+{
+  id: "CC-12",
+  name: "Marmita de Red Velvet",
+  italic: "200g",
+  category: "Marmitas",
+  desc: "Massa de cookie red velvet, gotas de chocolate branco, recheado de brigadeiro de cream cheese e ninho. 200 gramas.",
+  price: 20.0,
+  tag: { label: "Novo", className: "new" },
+  img: "img/marmita-red-velvet.jpeg"
+},
+{
+  id: "CC-13",
+  name: "Marmita Browkie",
+  italic: "150g",
+  category: "Marmitas",
+  desc: "A mistura perfeita de brownie meio amargo com nossa massa tradicional de cookie. 150 gramas.",
+  price: 20.0,
+  tag: { label: "Novo", className: "new" },
+  img: "img/marmita-browkie.jpeg"
+},
+{
+  id: "CC-14",
+  name: "Marmita de Nutella",
+  italic: "200g",
+  category: "Marmitas",
+  desc: "Massa tradicional de cookie, recheado de Nutella. 200 gramas.",
+  price: 20.0,
+  tag: { label: "Novo", className: "new" },
+  img: "img/marmita-nutella.jpeg"
+},
+{
+  id: "CC-15",
+  name: "Marmita de Nutella e Ninho",
+  italic: "200g",
+  category: "Marmitas",
+  desc: "Massa tradicional de cookie, recheado com Nutella e brigadeiro de ninho. 200 gramas.",
+  price: 20.0,
+  tag: { label: "Novo", className: "new" },
+  img: "img/marmita-nutella-ninho.jpeg"
 }];
 
 
-const CATEGORIES = ["Todos", "Recheados", "Clássicos", "Caixinha"];
+const CATEGORIES = ["Todos", "Recheados", "Clássicos", "Caixinha", "Marmitas"];
 
 // ============ HELPERS ============
 
@@ -200,7 +270,7 @@ function Stats() {
     <div className="stats">
       <div className="stats-grid">
         <div className="stat-item">
-          <div className="stat-num">6</div>
+          <div className="stat-num">9</div>
           <div className="stat-label">sabores recheados</div>
         </div>
         <div className="stat-item">
