@@ -451,7 +451,7 @@ function Location() {
   { day: "Quinta", hours: "14h – 20h", today: true },
   { day: "Sexta", hours: "14h – 20h" },
   { day: "Sábado", hours: "14h – 20h" },
-  { day: "Domingo", hours: "14h – 20h" },
+  { day: "Domingo", hours: "Fechado" },
   { day: "Segunda", hours: "14h – 20h" }];
 
 
